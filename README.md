@@ -217,6 +217,13 @@ Press `MOD+Shift+R` to refresh i3
 - Uncomment `# focus_follows_mouse no` in `~/.i3/config`
 - Press `MOD+Shift+R` to refresh i3
 
+### Modify locking app
+
+- Open `~/.i3/config`
+- Replace every use of `blurlock` with `i3lock -c 474747`
+- Replace use of `i3exit lock` with `i3lock -c 474747`
+- Press `MOD+Shift+R` to refresh i3
+
 # Dot files
 
 Copy from Ubuntu-specific repo - https://github.com/mkorman9/ubuntu-setup
