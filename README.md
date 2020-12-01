@@ -55,6 +55,8 @@ sudo pacman -S thunar \
                vlc \
                audacity \
                obs-studio \
+               pulseaudio \
+               pavucontrol \
                flameshot \
                qemu \
                libvirt \
@@ -90,6 +92,14 @@ Configure libvirt
 ```bash
 sudo systemctl start libvirtd
 sudo systemctl enable libvirtd
+```
+
+Configure PulseAudio
+```bash
+systemctl --user start pulseaudio.socket
+systemctl --user start pulseaudio.service
+systemctl --user enable pulseaudio.socket
+systemctl --user enable pulseaudio.service
 ```
 
 Configure Java
