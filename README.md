@@ -162,9 +162,9 @@ exec_always --no-startup-id xset r rate 240 80
 
 ### Change wallpaper
 
-Download my wallpaper: https://drive.google.com/file/d/1d70qhHiSogltAjQFXmVq2D9EvT14hL8f/view
-Run `nitrogen` and choose it
-Make it reappear on i3 restart by appending to `~/.i3/config`
+- Download my wallpaper: https://drive.google.com/file/d/1d70qhHiSogltAjQFXmVq2D9EvT14hL8f/view
+- Run `nitrogen` and select it
+- Make it reappear on i3 restart by appending to `~/.i3/config`
 ```
 exec --no-startup-id nitrogen --restore
 ```
