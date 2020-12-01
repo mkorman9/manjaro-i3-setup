@@ -173,8 +173,6 @@ pip install boto \
     flask
 ```
 
-```
-
 Run flameshot (screenshot tool)
 ```bash
 flameshot gui
