@@ -173,8 +173,8 @@ Press `MOD+Shift+R` to refresh i3
 
 ### Move status bar to the top
 
-Open `~/.i3/config` and find `bar` section. Replace `position bottom` with `position top`
-For example
+- Open `~/.i3/config` and find `bar` section. Replace `position bottom` with `position top`
+- For example
 ```
 bar {
     position bottom
@@ -193,19 +193,19 @@ Press `MOD+Shift+R` to refresh i3
 
 ### Change status bar layout
 
-Modify `/etc/i3status.conf` as a root
-Press `MOD+Shift+R` to refresh i3
+- Modify `/etc/i3status.conf` as a root
+- Press `MOD+Shift+R` to refresh i3
 
 ### Make gaps between windows smaller
 
-Open `~/.i3/config` and find a line with `gaps inner`
-Replace it with something like `gaps inner 2`
-Press `MOD+Shift+R` to refresh i3
+- Open `~/.i3/config` and find a line with `gaps inner`
+- Replace it with something like `gaps inner 2`
+- Press `MOD+Shift+R` to refresh i3
 
 ### Make focus not follow mouse
 
-Uncomment `# focus_follows_mouse no` in `~/.i3/config`
-Press `MOD+Shift+R` to refresh i3
+- Uncomment `# focus_follows_mouse no` in `~/.i3/config`
+- Press `MOD+Shift+R` to refresh i3
 
 # Dot files
 
