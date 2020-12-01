@@ -148,6 +148,33 @@ wget -P /tmp https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf /tmp/go1.15.5.linux-amd64.tar.gz
 ```
 
+Configure Python
+```bash
+mkdir ~/.virtualenvs
+
+python -m venv ~/.virtualenvs/common_py3
+
+sudo pacman -S python2 python2-pip python2-virtualenv
+python2 -m virtualenv ~/.virtualenvs/common_py27
+
+# For both virtual envs
+pip install boto \
+    ipython \
+    numpy \
+    matplotlib \
+    paramiko \
+    Pillow \
+    pudb \
+    pwntools \
+    pycrypto \
+    pyserial \
+    requests \
+    z3-solver \
+    flask
+```
+
+```
+
 Run flameshot (screenshot tool)
 ```bash
 flameshot gui
