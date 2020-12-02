@@ -48,6 +48,7 @@ sudo pacman -S base-devel \
 Desktop stuff
 ```bash
 sudo pacman -S thunar \
+               xfce4-terminal \
                firefox \
                chromium \
                gimp \
@@ -219,6 +220,13 @@ Press `MOD+Shift+R` to refresh i3
 
 - Modify `/etc/i3status.conf` as a root
 - Press `MOD+Shift+R` to refresh i3
+
+### Change the default terminal emulator to xfce4-terminal
+
+- Modify `/usr/bin/terminal` as root
+- Comment out everything except a shebang and replace with `xfce4-terminal $@`
+- Reopen terminal
+- Change the default preset to "Dark Pastels"
 
 ### Make gaps between windows smaller
 
