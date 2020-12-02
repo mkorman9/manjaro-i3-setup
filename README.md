@@ -189,12 +189,12 @@ exec_always --no-startup-id xset r rate 240 80
 
 - Download my wallpaper: https://drive.google.com/file/d/1d70qhHiSogltAjQFXmVq2D9EvT14hL8f/view
 - Run `nitrogen` and select it
-- Make it reappear on i3 restart by appending to `~/.i3/config`
-```
-exec --no-startup-id nitrogen --restore
-```
+- Press `MOD+Shift+R` to refresh i3
 
-Press `MOD+Shift+R` to refresh i3
+### Get rid of package manager icon from tray
+
+- Open `~/.i3/config` and find a line with `pamac-tray`, comment it out
+- Relog (`WIN+0` -> `e`)
 
 ### Move status bar to the top
 
@@ -249,7 +249,7 @@ Press `MOD+Shift+R` to refresh i3
 
 - Edit `/usr/bin/start_conky_maia` as root
 - Find and comment out a line with `conky1.10_shortcuts_maia`
-- Relog (`WIN+0` -> `e`)
+- Relog
 
 # Dot files
 
