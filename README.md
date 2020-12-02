@@ -66,6 +66,7 @@ sudo pacman -S thunar \
                intellij-idea-community-edition \
                jdk11-openjdk \
                jdk8-openjdk \
+               go \
                graphviz
 ```
 
@@ -140,12 +141,6 @@ git clone https://aur.archlinux.org/sublime-text-dev.git
 cd sublime-text-dev
 makepkg -si
 sudo ln -s /usr/bin/subl3 /usr/bin/subl
-```
-
-Install go
-```bash
-wget -P /tmp https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf /tmp/go1.15.5.linux-amd64.tar.gz
 ```
 
 Configure Python
