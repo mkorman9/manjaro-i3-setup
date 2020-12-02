@@ -233,9 +233,8 @@ Press `MOD+Shift+R` to refresh i3
 
 ### Modify locking app
 
-- Open `~/.i3/config`
-- Replace every use of `blurlock` with `i3lock -c 474747`
-- Replace use of `i3exit lock` with `i3lock -c 474747`
+- Open `/usr/bin/blurlock` as root. 
+- Comment out almost everything except exit and shebang and replace with `i3lock -c 474747`
 - Press `MOD+Shift+R` to refresh i3
 
 ### Remove desktop overlay with the default shortcuts
