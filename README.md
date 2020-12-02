@@ -110,12 +110,12 @@ sudo archlinux-java set java-8-openjdk  # to select Java 8
 
 Configure AUR
 ```bash
-sudo mkdir /usr/lib/aur && sudo chmod o+rwx /usr/lib/aur
+sudo mkdir /usr/local/src/aur && sudo chmod o+rwx /usr/local/src/aur
 ```
 
 Install Spotify
 ```bash
-cd /usr/lib/aur
+cd /usr/local/src/aur
 git clone https://aur.archlinux.org/spotify.git
 cd spotify
 makepkg -si
@@ -127,7 +127,7 @@ makepkg -si
 
 Install widevine (for Netflix)
 ```bash
-cd /usr/lib/aur
+cd /usr/local/src/aur
 git clone https://aur.archlinux.org/chromium-widevine.git
 cd chromium-widevine
 makepkg -si
@@ -135,7 +135,7 @@ makepkg -si
 
 Install Sublime
 ```bash
-cd /usr/lib/aur
+cd /usr/local/src/aur
 git clone https://aur.archlinux.org/sublime-text-dev.git
 cd sublime-text-dev
 makepkg -si
