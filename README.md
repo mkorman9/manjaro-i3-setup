@@ -57,7 +57,6 @@ sudo pacman -S thunar \
                obs-studio \
                pulseaudio \
                pavucontrol \
-               flameshot \
                qemu \
                libvirt \
                virt-manager \
@@ -168,11 +167,6 @@ pip install boto \
     flask
 ```
 
-Run flameshot (screenshot tool)
-```bash
-flameshot gui
-```
-
 # Interface tweaking
 
 ### Remap Caps Lock to Escape
@@ -243,6 +237,12 @@ Press `MOD+Shift+R` to refresh i3
 - Replace every use of `blurlock` with `i3lock -c 474747`
 - Replace use of `i3exit lock` with `i3lock -c 474747`
 - Press `MOD+Shift+R` to refresh i3
+
+### Remove desktop overlay with the default shortcuts
+
+- Edit `/usr/bin/start_conky_maia` as root
+- Find and comment out a line with `conky1.10_shortcuts_maia`
+- Relog (`WIN+0` -> `e`)
 
 # Dot files
 
