@@ -170,51 +170,11 @@ pip install boto \
 
 # Interface tweaking
 
-### Remap Caps Lock to Escape
-
-Append to `~/.i3/config`
-```
-exec_always --no-startup-id xmodmap -e "clear lock"
-exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-```
-
-### Change key-repeating speed
-
-Append to `~/.i3/config`
-```
-exec_always --no-startup-id xset r rate 240 80
-```
-
 ### Change wallpaper
 
 - Download my wallpaper: https://drive.google.com/file/d/1d70qhHiSogltAjQFXmVq2D9EvT14hL8f/view
 - Run `nitrogen` and select it
 - Press `MOD+Shift+R` to refresh i3
-
-### Get rid of package manager icon from tray
-
-- Open `~/.i3/config` and find a line with `pamac-tray`, comment it out
-- Relog (`WIN+0` -> `e`)
-
-### Move status bar to the top
-
-- Open `~/.i3/config` and find `bar` section. Replace `position bottom` with `position top`
-- For example
-```
-bar {
-    position bottom
-    ...
-}
-```
-
-should become
-```
-bar {
-    position top
-}
-```
-
-Press `MOD+Shift+R` to refresh i3
 
 ### Change status bar layout
 
@@ -226,17 +186,6 @@ Press `MOD+Shift+R` to refresh i3
 - Modify `/usr/bin/terminal` as root
 - Comment out everything except a shebang and replace with `kitty $@`
 - Reopen terminal
-
-### Make gaps between windows smaller
-
-- Open `~/.i3/config` and find a line with `gaps inner`
-- Replace it with something like `gaps inner 2`
-- Press `MOD+Shift+R` to refresh i3
-
-### Make focus not follow mouse
-
-- Uncomment `# focus_follows_mouse no` in `~/.i3/config`
-- Press `MOD+Shift+R` to refresh i3
 
 ### Modify locking app
 
