@@ -68,7 +68,8 @@ sudo pacman -S thunar \
                jdk8-openjdk \
                go \
                graphviz \
-               redshift
+               redshift \
+               rofi
 ```
 
 Install oh-my-zsh
