@@ -72,6 +72,11 @@ sudo pacman -S thunar \
                rofi
 ```
 
+Remove some bloat
+```bash
+sudo pacman -R snapd
+```
+
 Install oh-my-zsh
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -s --batch
