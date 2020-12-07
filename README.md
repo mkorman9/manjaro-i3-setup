@@ -51,6 +51,7 @@ sudo pacman -S thunar \
                kitty \
                firefox \
                chromium \
+               thunderbird \
                gimp \
                ffmpeg \
                vlc \
@@ -103,6 +104,11 @@ systemctl --user start pulseaudio.socket
 systemctl --user start pulseaudio.service
 systemctl --user enable pulseaudio.socket
 systemctl --user enable pulseaudio.service
+```
+
+Enable firewall
+```bash
+sudo ufw enable
 ```
 
 Configure Java
