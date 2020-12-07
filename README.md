@@ -67,7 +67,8 @@ sudo pacman -S thunar \
                jdk11-openjdk \
                jdk8-openjdk \
                go \
-               graphviz
+               graphviz \
+               redshift
 ```
 
 Install oh-my-zsh
@@ -198,6 +199,21 @@ pip install boto \
 - Edit `/usr/bin/start_conky_maia` as root
 - Find and comment out a line with `conky1.10_shortcuts_maia`
 - Relog
+
+### Edit login manager options
+
+Various options like the default window manager and login screen wallpaper can be set in files from `/etc/lightdm/`
+
+### Change DNS servers for NetworkManager
+
+- List network connections with `nmcli`
+- Ignore DNS servers provided through DHCP `nmcli con mod <connectionName> ipv4.ignore-auto-dns yes`
+- Set DNS servers (for example Cloudflare) `nmcli con mod <connectionName> ipv4.dns "1.1.1.1 1.0.0.1"`
+- Bring modified connection down and then up to apply settings
+```bash
+nmcli con down <connectionName>
+nmcli con up <connectionName>
+```
 
 # Dot files
 
