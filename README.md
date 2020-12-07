@@ -15,7 +15,6 @@ sudo nvidia-settings
 
 Regular stuff
 ```bash
-sudo pacman -Syy
 sudo pacman -Syu
 
 sudo pacman -S base-devel \
