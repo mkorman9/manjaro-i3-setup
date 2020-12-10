@@ -68,6 +68,7 @@ sudo pacman -S thunar \
                jdk8-openjdk \
                go \
                graphviz \
+               pyenv \
                redshift \
                rofi
 ```
@@ -157,27 +158,13 @@ sudo ln -s /usr/bin/subl3 /usr/bin/subl
 
 Configure Python
 ```bash
-mkdir ~/.virtualenvs
+pyenv install 2.7.18
+pyenv install 3.8.6
+pyenv global 3.8.6
 
-python -m venv ~/.virtualenvs/common_py3
-
-sudo pacman -S python2 python2-pip python2-virtualenv
-python2 -m virtualenv ~/.virtualenvs/common_py27
-
-# For both virtual envs
-pip install boto \
-    ipython \
-    numpy \
-    matplotlib \
-    paramiko \
-    Pillow \
-    pudb \
-    pwntools \
-    pycrypto \
-    pyserial \
-    requests \
-    z3-solver \
-    flask
+pip install ipython
+ipython profile create
+sed -i 's/# c.TerminalInteractiveShell.confirm_exit = True/c.TerminalInteractiveShell.confirm_exit = False/g' ~/.ipython/profile_default/ipython_config.py
 ```
 
 # Interface tweaking
