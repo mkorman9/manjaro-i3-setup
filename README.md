@@ -32,7 +32,7 @@ sudo pacman -S base-devel \
                unrar \
                netcat \
                nmap \
-               tracroute \
+               traceroute \
                dnsutils \
                net-tools \
                htop \
