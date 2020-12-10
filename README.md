@@ -38,10 +38,7 @@ sudo pacman -S base-devel \
                htop \
                neofetch \
                libmpc \
-               attr \
-               binwalk \
-               hashcat \
-               docker
+               attr
 ```
 
 Desktop stuff
@@ -70,7 +67,10 @@ sudo pacman -S thunar \
                graphviz \
                pyenv \
                redshift \
-               rofi
+               rofi \
+               binwalk \
+               hashcat \
+               docker
 ```
 
 Remove some bloat
