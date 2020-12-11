@@ -225,7 +225,7 @@ exec --no-startup-id redshift -l 51.1:17.03333
 exec --no-startup-id volumeicon
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always --no-startup-id xmodmap -e "clear lock"
-exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-exec_always --no-startup-id xset r rate 240 80  # keyboard repeat speed
-exec_always --no-startup-id xset m 1/1 4        # mouse acceleration
+
+exec_always --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id xset r rate 240 60              # keyboard repeat speed
+exec_always --no-startup-id xset m 1/1 4                    # mouse acceleration
