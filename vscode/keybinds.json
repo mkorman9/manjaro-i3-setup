@@ -88,5 +88,15 @@
     {
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new"
+    },
+    {
+        "key": "alt+4",
+        "command": "workbench.debug.action.toggleRepl",
+        "when": "debuggersAvailable"
+    },
+    {
+        "key": "alt+f8",
+        "command": "-workbench.debug.action.toggleRepl",
+        "when": "debuggersAvailable"
     }
 ]
