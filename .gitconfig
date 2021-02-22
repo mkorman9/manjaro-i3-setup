@@ -20,6 +20,7 @@
     unstage = restore --staged
     branches = !git --no-pager branch --list -a
     tags = !git --no-pager tag --list
+    changes = diff --cached
 [core]
     autocrlf = false
     ignoreCase = false
