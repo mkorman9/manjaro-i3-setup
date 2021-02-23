@@ -139,6 +139,14 @@ gpg --keyserver pool.sks-keyservers.net --recv-key <KEY ID>
 makepkg -si
 ```
 
+Install MongoDB Compass
+```bash
+cd /usr/local/src/aur
+git clone https://aur.archlinux.org/mongodb-compass.git
+cd mongodb-compass
+makepkg -si
+```
+
 Install widevine (for Netflix)
 ```bash
 cd /usr/local/src/aur
