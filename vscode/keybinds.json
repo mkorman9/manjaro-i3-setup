@@ -1,3 +1,5 @@
+// Place your key bindings in this file to override the defaults
+[
     { 
         "key": "Escape", 
         "command": "workbench.action.focusActiveEditorGroup", 
@@ -98,5 +100,17 @@
         "key": "alt+f8",
         "command": "-workbench.debug.action.toggleRepl",
         "when": "debuggersAvailable"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder"
     }
 ]
